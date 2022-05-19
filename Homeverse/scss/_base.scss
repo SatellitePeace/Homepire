@@ -1,0 +1,87 @@
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$dark-jungle-green: hsl(188, 63%, 7%);
+$prussian-blue: hsl(200, 69%, 14%);
+$raisin-black-1: hsl(227, 29%, 13%);
+$raisin-black-2: hsl(229, 17%, 19%);
+$yellow-green: hsl(89, 72%, 45%);
+$orange-soda: hsl(9, 100%, 62%);
+$cultured-1: hsl(0, 0%, 93%);
+$cultured-2: hsl(192, 24%, 96%);
+$misty-rose: hsl(7, 56%, 91%);
+$alice-blue: hsl(210, 100%, 97%);
+$seashell: hsl(8, 100%, 97%);
+$cadet: hsl(200, 15%, 43%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$opal: hsl(180, 20%, 62%);
+
+// BREAKPOINTS FOR MEDIA QUERIES
+
+$shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+$shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
+
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-meduim: 50em;
+$bp-small: 37.5em;
+// $bp-lrage:
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+//TYPOGRAPHY VARIABLES
+$font-size-small: 1.4rem;
+$font-size-meduim: 1.6rem;
+$font-size-large: 2rem;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-1;
+  list-style: 1.6rem;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  &:hover {
+    color: currentColor;
+  }
+}
+
+.btns {
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+}
+.main {
+  display: grid;
+  grid-template-rows:
+    repeat(2, min-content) 90vh repeat(2, min-content) 60vh repeat(
+      4,
+      min-content
+    )
+    1fr;
+  grid-template-columns:
+    minmax(2.5rem, 1fr)
+    [full-start] repeat(11, [cell-start] minmax(min-content, 1fr) [cell-end])
+    [full-end] minmax(2.5rem, 1fr);
+}
