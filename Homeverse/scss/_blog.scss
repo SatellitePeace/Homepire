@@ -1,4 +1,46 @@
 .blog {
-  background: goldenrod;
   grid-column: full-start / full-end;
+
+  &__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    column-gap: 5rem;
+  }
+  &__card {
+    background: $bg-colour;
+
+    margin: 3rem 0;
+    font-family: $font-display;
+  }
+  &__padding--div {
+    padding: 0 2rem;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    font-size: $font-size-meduim;
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: $font-size-small;
+    border-top: 1px solid $color-primary-dark;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+  &__link {
+    color: $color-primary-dark;
+  }
+  &__mainnav {
+    display: block;
+    text-align: center;
+    margin: 4rem;
+    font-size: $font-size-large;
+    color: $color-primary;
+  }
 }

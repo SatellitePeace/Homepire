@@ -1,4 +1,41 @@
 .header {
-  background: palevioletred;
+  background: $bg-colour;
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 15rem;
+  place-items: center;
+  padding: 7rem;
+  margin-bottom: 5rem;
+
+  &__smalltext {
+    font-size: $font-size-meduim;
+    color: $color-primary;
+  }
+  &__heading {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: $color-primary-dark;
+  }
+  &__subheading {
+    font-size: $font-size-large;
+    border-left: 1.17px solid $color-primary;
+    padding-left: 1.5rem;
+    line-height: 3.5rem;
+    margin: 2rem 0 4rem 0;
+  }
+  &__btn {
+    border: 2px solid $color-secondary;
+    font-size: $font-size-meduim;
+    margin-bottom: 3rem;
+  }
+  &__img {
+    width: 100%;
+    // display: block;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-shadow: $shadow-1;
+    border: 1px solid $bg-colour;
+  }
 }

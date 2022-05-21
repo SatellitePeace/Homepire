@@ -1,0 +1,66 @@
+.about-us {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  column-gap: 5rem;
+  margin-bottom: 10rem;
+  &__img {
+    position: relative;
+  }
+  &__image {
+    width: 100%;
+    display: grid;
+    display: block;
+  }
+  &__image-2 {
+    position: absolute;
+    width: auto;
+    height: 30%;
+    bottom: 12%;
+    right: 50%;
+    object-fit: cover;
+  }
+
+  &__main-heading {
+    text-align: start;
+  }
+  &__maintext {
+    font-size: $font-size-meduim;
+    margin: 1rem 0;
+  }
+  &__icon-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    font-size: $font-size-meduim;
+    margin: 3rem 0;
+    i {
+      background: $bg-colour;
+      color: $color-primary-dark;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+  &__icon-items {
+    margin-bottom: 1.5rem;
+  }
+  &__subtext {
+    font-size: $font-size-meduim;
+    background: $bg-colour;
+    padding: 1.5rem;
+    border-left: 3px solid $color-primary-dark;
+    margin-top: 2.5rem;
+    i {
+      color: $color-primary-dark;
+      &:not(:last-child) {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  &__btn {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 2px solid $color-primary-dark;
+    font-size: $font-size-large;
+  }
+}

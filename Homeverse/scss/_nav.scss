@@ -24,6 +24,12 @@
       color: $color-primary-dark;
     }
   }
+  &__btn {
+    border: 1px solid $color-primary-dark;
+    position: relative;
+    color: $cultured-2;
+    z-index: 100;
+  }
   @media screen and (max-width: $bp-small) {
     gap: 1.5rem;
   }
@@ -39,6 +45,7 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: center;
   align-items: center;
+  z-index: 10000;
   &__logo {
     height: 3rem;
   }
@@ -73,6 +80,7 @@
     &:hover {
       background: $color-primary;
       color: $color-secondary;
+      box-shadow: $shadow-2;
     }
   }
   @media screen and (max-width: $bp-meduim) {

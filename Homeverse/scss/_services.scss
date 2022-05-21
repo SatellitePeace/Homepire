@@ -1,4 +1,60 @@
 .services {
-  background: orangered;
-  grid-column: full-start / full-end;
+  background: $bg-colour;
+  grid-column: 1 / -1;
+}
+.service {
+  margin: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
+
+  &__img {
+    margin-top: 3rem;
+  }
+  &__card {
+    padding: 0 3.5rem;
+    background: $white;
+    transition: all 0.3s;
+    box-shadow: $shadow-2;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: $font-size-meduim;
+    font-family: $font-display;
+  }
+  &__link {
+    font-size: $font-size-small;
+    font-family: $font-display;
+    color: $color-grey-dark-1;
+    font-weight: bolder;
+    transition: all 0.2s;
+    margin: 2rem 0 2.5rem 0;
+
+    &:hover {
+      color: $orange-soda;
+    }
+  }
+}
+.card {
+  display: grid;
+  justify-items: start;
+  align-items: end;
+  position: relative;
+  &::before {
+    content: "";
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    transform: scaleY(0);
+    border-bottom: 5px solid $color-primary;
+    transition: transform 0.1s, width 0.1s cubic-bezier(1, 0, 0, 1) 0.1s;
+  }
+  &:hover::before {
+    width: 100%;
+    transform: scale(1);
+  }
+}
+.card:hover .service__link {
+  color: $color-primary;
 }

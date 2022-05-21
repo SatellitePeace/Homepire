@@ -1,4 +1,85 @@
 .formreal {
-  background: grey;
-  grid-column: full-start / full-end;
+  background: $bg-colour;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 2rem;
+  margin: 2rem 0;
+  &__main-form {
+    box-shadow: $shadow-2;
+    margin: 4.5rem;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    padding: 2rem;
+  }
+  &__heading {
+    text-align: center;
+    font-size: $font-size-larger;
+    font-family: $font-display;
+    text-transform: capitalize;
+    color: $color-secondary;
+    margin: 3rem 0 1.5rem 0;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    text-transform: capitalize;
+    font-family: $font-display;
+    font-size: $font-size-small;
+    border: 2px solid $color-primary;
+    background: $white;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__form-btn {
+    width: 80%;
+    display: block;
+    font-size: $font-size-large;
+    font-family: $font-display;
+    text-transform: capitalize;
+    background: $bg-colour;
+    color: $color-secondary;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.7rem;
+    margin: 2rem auto;
+    transition: 0.2s;
+    &:hover {
+      background: $color-primary-dark;
+    }
+  }
+  &__img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20%;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  &__realtors {
+    box-shadow: $shadow-2;
+    padding: 2rem 4rem;
+    margin: 4.5em;
+    // display: grid;
+    // place-items: center;
+  }
+  &__realtors--div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, min-content));
+    margin-top: 4rem;
+  }
+  &__realtors--details {
+    font-size: $font-size-meduim;
+    text-transform: capitalize;
+  }
+  &__realtors--name {
+    font-size: $font-size-large;
+  }
 }
