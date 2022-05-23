@@ -33,6 +33,7 @@ $shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
 
 $bp-largest: 75em;
 $bp-large: 62.5em;
+$bp-mid-large: 65.5em;
 $bp-meduim: 50em;
 $bp-small: 37.5em;
 // $bp-lrage:
@@ -43,6 +44,7 @@ $font-display: "Josefin Sans", sans-serif;
 //TYPOGRAPHY VARIABLES
 $font-size-small: 1.4rem;
 $font-size-meduim: 1.6rem;
+$font-size-mid-large: 2.5rem;
 $font-size-large: 2rem;
 $font-size-larger: 3.5rem;
 *,
@@ -55,13 +57,14 @@ $font-size-larger: 3.5rem;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 body {
   font-family: $font-primary;
   color: $color-grey-dark-1;
   background: $color-grey-light-1;
-
-  list-height: 1.6rem;
 }
 // GLOBAL LINK DESIGN
 a {
@@ -78,23 +81,11 @@ a {
   background: transparent;
   text-transform: capitalize;
   padding: 0.5rem;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  &::before {
-    content: "";
-    transform: scaleX(0);
-    background: $color-primary;
-    height: 100%;
-    width: 3px;
-    z-index: -1;
-    position: absolute;
-    align-self: center;
-    transition: transform 0.1s, width 0.1s cubic-bezier(1, 0, 0, 1) 0.1s;
-  }
-  &:hover::before {
-    width: 100%;
-    transform: scaleX(1);
+  background: $color-primary;
+  border: 1px solid $color-secondary;
+  transition: 0.2s;
+  &:hover {
+    background: transparent;
   }
 }
 // GLOBAL TYPOGRAPHY
@@ -104,6 +95,16 @@ a {
   margin: 3.5rem 0 0 0;
   text-align: center;
   font-weight: bolder;
+  @media screen and (max-width: $bp-largest) {
+    font-size: $font-size-large;
+  }
+  @media screen and (max-width: $bp-mid-large) {
+    max-width: 95%;
+    font-size: $font-size-mid-large;
+  }
+  @media screen and (max-width: $bp-small) {
+    font-size: $font-size-larger;
+  }
 }
 .heading-4 {
   text-transform: uppercase;
@@ -133,6 +134,7 @@ a {
 }
 // MAIN CONTAINER GRID LAYOUT DESIGN
 .main {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(2, min-content) 95% 95% min-content 60vh repeat 95% (
       3,

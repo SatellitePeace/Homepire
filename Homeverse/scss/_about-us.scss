@@ -4,8 +4,15 @@
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   column-gap: 5rem;
   margin-bottom: 10rem;
+  @media screen and (max-width: $bp-small) {
+    grid-column: 1 / -1;
+    padding: 0 1rem;
+  }
   &__img {
     position: relative;
+    @media screen and (max-width: $bp-mid-large) {
+      display: none;
+    }
   }
   &__image {
     width: 100%;
@@ -27,10 +34,20 @@
   &__maintext {
     font-size: $font-size-meduim;
     margin: 1rem 0;
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-meduim;
+    }
+    @media screen and (max-width: $bp-large) {
+      font-size: $font-size-mid-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      max-width: 95%;
+      font-size: $font-size-large;
+    }
   }
   &__icon-div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
     font-size: $font-size-meduim;
     margin: 3rem 0;
@@ -39,6 +56,12 @@
       color: $color-primary-dark;
       padding: 1rem;
       border-radius: 50%;
+    }
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-meduim;
+    }
+    @media screen and (max-width: $bp-large) {
+      font-size: $font-size-large;
     }
   }
   &__icon-items {
@@ -56,11 +79,27 @@
         margin-right: 0.3rem;
       }
     }
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-meduim;
+    }
+    @media screen and (max-width: $bp-large) {
+      max-width: 95%;
+      font-size: $font-size-mid-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-large;
+    }
   }
   &__btn {
     margin: 1.5rem 0;
     padding: 1rem;
-    border: 2px solid $color-primary-dark;
+    border: 2px solid $color-secondary;
     font-size: $font-size-large;
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-small;
+    }
+    @media screen and (max-width: $bp-large) {
+      font-size: $font-size-large;
+    }
   }
 }

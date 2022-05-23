@@ -1,91 +1,118 @@
 @mixin grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @mixin font {
-  font-size: $font-size-meduim;
+  font-size: $font-size-small;
   text-transform: capitalize;
 }
+@mixin padding {
+  padding: 0 2.5rem;
+}
+@mixin font2 {
+  font-size: $font-size-meduim;
+  text-transform: capitalize;
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+@mixin position {
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+.splide__slide--img-container img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
 .properties {
-  grid-column: full-start / full-end;
-  margin: 5rem 0;
+  grid-column: 1 / -1;
+  margin: 5rem;
   &__heading {
     margin-bottom: 5rem;
   }
 }
-.img_box img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 4/3;
-}
-.img_box {
-  font-family: $font-display;
-  width: 92%;
-  margin: 0 auto;
-  &__main--div {
-    position: relative;
-  }
-  &__main--span {
-    display: inline-block;
-    position: absolute;
-    width: 25%;
-    top: 2rem;
-    left: 65%;
+.splide__slide {
+  background: $seashell;
+  color: $raisin-black-2;
+  box-shadow: $shadow-1;
+  &--type {
+    @include position;
+    top: 0;
+    right: 1rem;
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: end;
     @include font;
-    background: $misty-rose;
-    padding: 0.5rem;
-    text-align: center;
+    background: $seashell;
   }
-  &__padding {
-    padding: 1.5rem;
-    background: $misty-rose;
-  }
-  &__price {
-    @include grid;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-
-    color: $color-primary;
-    margin: 1rem 0;
-  }
-  &__btn {
-    border: none;
-    background: $bg-colour;
+  &--location {
+    @include position;
     @include font;
-    color: $color-secondary;
-    &:hover {
-      background-color: $color-primary;
-    }
-  }
-  &__subheading {
-    @include font;
-  }
-  &__details--div {
-    @include grid;
-  }
-  &__info {
-    @include font;
-    margin-top: 2rem;
-  }
-  &__realtor--contact {
-    width: 95%;
-    font-size: $font-size-small;
-    text-transform: uppercase;
+    top: 40%;
+    color: $white;
+    margin: 0 1rem;
     font-weight: 700;
-    background: $color-primary;
-    border: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-    place-items: center;
-    padding: 1.5rem 1rem;
+  }
+  &--price {
+    @include grid;
+    margin: 2rem 0 0.5rem 0;
+    color: $orange-soda;
+
     a {
-      color: $color-secondary;
-      margin-right: 0.5rem;
-      font-size: $font-size-large;
+      font-size: $font-size-mid-large;
+      @include padding;
+      color: $orange-soda;
     }
   }
-}
-.swiper-btn {
-  margin: 0 -1rem;
+  &--heading-5 {
+    @include font2;
+    @include padding;
+  }
+  &--text {
+    @include font;
+    @include padding;
+  }
+  &--facilities {
+    @include grid;
+    @include font;
+    @include padding;
+    margin-bottom: 0.7rem;
+    aside {
+      &:not(:last-child) {
+        border-right: 1px solid $raisin-black-2;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+  &--realtor {
+    @include grid;
+    padding: 1.5rem 0;
+    border-top: 1px solid $color-grey-light-2;
+    padding: 0.7rem 1.5rem;
+    @include font;
+    &-details {
+      @include grid;
+    }
+  }
+  &--realtor-img {
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  &--heading {
+    @include grid;
+    font-weight: 700;
+  }
+  &--contact-info {
+    color: $color-primary;
+    a {
+      color: $raisin-black-2;
+      font-size: $font-size-meduim;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
 }

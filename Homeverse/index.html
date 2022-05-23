@@ -22,11 +22,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- SWIPER JS CDN LINK -->
-     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <!-- SPLIDER SLIDER CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/themes/splide-sea-green.min.css">
 <!-- CSS LINK -->
     <link rel="stylesheet" href="../dist/csss/main.css" />
   </head>
@@ -67,6 +64,7 @@ add listing
  <a href="#form" class="mainnav__social" > <i class="bi bi-search"></i></a>
   <a href="#" class="mainnav__social"> <i class="bi bi-person-circle"></i></a>
    <a href="#" class="mainnav__social"> <i class="bi bi-cart4"></i></a>
+   
 </div>
       </nav>
 
@@ -101,7 +99,7 @@ find your dream home
         <h4 class="heading-2 about-us__main-heading">
           the leading real estate market place in Africa!!!
         </h4>
-        <p class="about-us__maintext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo quasi nobis, repellendus eum cumque officiis deleniti! Vel numquam aut, eum dicta quia ad ut accusamus beatae nisi magni mollitia.</p>
+        <p class="about-us__maintext">With over 8,000 workers, in 22 countries, our main goal is to find you the best and most affordable homes within the best locations in Africa, Europe, and USA.</p>
         <aside class="about-us__icon-div">
           <span class="about-us__icon-items">
             <i class="bi bi-shop"></i> Only The Best Homes
@@ -119,7 +117,7 @@ find your dream home
        <p class="about-us__subtext">
           I found my dream home through homepire and i couldn't be more happier.  <i class="bi bi-emoji-sunglasses"></i><i class="bi bi-emoji-sunglasses"></i><i class="bi bi-emoji-sunglasses"></i>
           <br>
-         Hompire is the best plug for renting, selling, and buying a home.
+      i highly recommend Homepire!!.
        </p>
         <button class="about-us__btn btns ">
           find your dream home
@@ -173,365 +171,293 @@ find your dream home
          <h2 class="heading-2 properties__heading">
     featured properties
   </h2>
-<div class="swiper-container">
-  <!-- <h2 class="heading-2">
-    featured properties
-  </h2> -->
-<div class="swiper card_slider">
-  <div class="swiper-wrapper">
-    <!-- SWIPER SLIDER 1 -->
-<div class="swiper-slide">
-  <div class="img_box">  
-   <div class="img_box__main--div">
-      <img src="./images/property-1.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for sell</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $1m
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-      modern bungalow
+<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+        <div class="splide__slide--img-container">
+          <img src="./images/property-1.jpg" alt="house photo">
+          <span class="splide__slide--type">
+            for sell
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> rosewood, pennsylvania</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$1,000,000</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+  modern bungalow
+</h4>
+<p class="splide__slide--text">
+ renovated and refurbised cozy bungalow with front and back yards.
+</p>,
+<div class="splide__slide--facilities">
+  <aside>
+      4 <i class="bi bi-usb-mini-fill"></i>
+<p>bedrooms</p>
+  </aside>
+  <aside>
+       6 <i class="bi bi-basket3-fill"></i>
+<p>bathrooms</p>
+  </aside>
+  <aside>
+ 100 <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-1.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      innocent chidi
     </h5>
-    <span class="img_box__subheading">
-      Rosewood pensylvania
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 100 sqft
-     </aside>
-      <aside class="img_box__info">
-        <i class="bi bi-back"></i>
-2 yards
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-         <i class="bi bi-usb-mini-fill"></i>
-4 beds
-     </aside>
-      <aside class="img_box__info">
-      <i class="bi bi-basket3-fill"></i>
-6 baths
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
-   </div>
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+  </div>
 </div>
-<!-- SWIPER SLIDER 2 -->
-<div class="swiper-slide">
-  <div class="img_box">
-     <div class="img_box__main--div">
-      <img src="./images/property-2.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for sell</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $2.5m
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-    1 storey modern home
+      </li>
+			<li class="splide__slide">
+ <div class="splide__slide--img-container">
+          <img src="./images/property-2.jpg" alt="house photo" class="splide__slide--img">
+          <span class="splide__slide--type">
+            for rent
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> downtown, nyc</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$1000k/month</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+family apartments
+</h4>
+<p class="splide__slide--text">
+ newly built 3 storey modern family freindly apartments in nyc surburbs
+</p>
+<div class="splide__slide--facilities">
+  <aside>
+      2 <i class="bi bi-usb-mini-fill"></i>
+<p>bedrooms</p>
+  </aside>
+  <aside>
+       2 <i class="bi bi-basket3-fill"></i>
+<p>bathrooms</p>
+  </aside>
+  <aside>
+ 10 <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-1.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      innocent chidi
     </h5>
-    <span class="img_box__subheading">
-  austin, maine
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 120 sqft
-     </aside>
-      <aside class="img_box__info">
-     <i class="bi bi-shop-window"></i>
-garage
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-         <i class="bi bi-usb-mini-fill"></i>
-5 beds
-     </aside>
-      <aside class="img_box__info">
-      <i class="bi bi-basket3-fill"></i>
-6 baths
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
-<!-- SWIPER SLIDER 3 -->
-<div class="swiper-slide">
-  <div class="img_box">
-     <div class="img_box__main--div">
-      <img src="./images/property-3.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for sell</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $3.2m
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-     semi detached flat
+      </li>
+			<li class="splide__slide">
+ <div class="splide__slide--img-container">
+          <img src="./images/property-3.jpg" alt="house photo">
+          <span class="splide__slide--type">
+            for sell
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> camden, uk</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$2.300,000</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+  waterfront cozy home
+</h4>
+<p class="splide__slide--text">
+ recently renovated lakeside home with modern utilities and panic room.
+</p>
+<div class="splide__slide--facilities">
+  <aside>
+      12 <i class="bi bi-usb-mini-fill"></i>
+<p>bedrooms</p>
+  </aside>
+  <aside>
+       13 <i class="bi bi-basket3-fill"></i>
+<p>bathrooms</p>
+  </aside>
+  <aside>
+ 320 <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-2.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      sasha vince
     </h5>
-    <span class="img_box__subheading">
-      camden UK
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 320 sqft
-     </aside>
-      <aside class="img_box__info">
-       <i class="bi bi-droplet-half"></i>
-pool
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-         <i class="bi bi-usb-mini-fill"></i>
-12 beds
-     </aside>
-      <aside class="img_box__info">
-      <i class="bi bi-basket3-fill"></i>
-13 baths
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
-<!-- SWIPER SLIDE 4 -->
-<div class="swiper-slide">
-  <div class="img_box">
-     <div class="img_box__main--div">
-      <img src="./images/property-4.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for rent</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $1k/mon
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-      modern apartments
+      </li>
+      	<li class="splide__slide">
+ <div class="splide__slide--img-container">
+          <img src="./images/property-4.jpg" alt="house photo">
+          <span class="splide__slide--type">
+            for rent
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> austin, maine</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$600,000/month</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+  industrial warehouse
+</h4>
+<p class="splide__slide--text">
+newly built multipurpose warehouse with multiple parking spaces.
+</p>
+<div class="splide__slide--facilities">
+  <aside>
+      27 <i class="bi bi-usb-mini-fill"></i>
+<p>stores</p>
+  </aside>
+  <aside>
+       32 <i class="bi bi-basket3-fill"></i>
+<p>parks</p>
+  </aside>
+  <aside>
+ 100k <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-3.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      ifeanyi chris
     </h5>
-    <span class="img_box__subheading">
-      Ontario canada
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 10 sqft
-     </aside>
-      <aside class="img_box__info">
-<i class="bi bi-bicycle"></i>
-parking
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-         <i class="bi bi-usb-mini-fill"></i>
-2 beds
-     </aside>
-      <aside class="img_box__info">
-      <i class="bi bi-basket3-fill"></i>
-2 baths
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
-<!-- SWIPER SLIDER 5 -->
-<div class="swiper-slide">
-  <div class="img_box">
-     <div class="img_box__main--div">
-      <img src="./images/property-5.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for rent</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $2m/mon
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-   industrial warehouse
+        </li>
+			<li class="splide__slide">
+ <div class="splide__slide--img-container">
+          <img src="./images/property-5.jpg" alt="house photo">
+          <span class="splide__slide--type">
+            for sell
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> rural, south Africa</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$3,000,000</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+  modern 1 storey
+</h4>
+<p class="splide__slide--text">
+ beautiful single storey cozy house built close to wildlife conservation.
+</p>
+<div class="splide__slide--facilities">
+  <aside>
+      4 <i class="bi bi-usb-mini-fill"></i>
+<p>bedrooms</p>
+  </aside>
+  <aside>
+       5 <i class="bi bi-basket3-fill"></i>
+<p>bathrooms</p>
+  </aside>
+  <aside>
+ 120 <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-3.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      ifeanyi chris
     </h5>
-    <span class="img_box__subheading">
-    lagos, nigeria
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 100k sqft
-     </aside>
-      <aside class="img_box__info">
-        <i class="bi bi-hospital"></i> clinic
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-         <i class="bi bi-aspect-ratio"></i>
-16 stores
-     </aside>
-      <aside class="img_box__info">
-      <i class="bi bi-building"></i>
-32 parks
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
-<!-- SWIPER SLIDER 6 -->
-<div class="swiper-slide">
-  <div class="img_box">
-     <div class="img_box__main--div">
-      <img src="./images/property-6.jpg" alt="house photo"/>
-   </div>
-     <span class="img_box__main--span">for rent</span>
-   <div class="img_box__padding">
-      <div class="img_box__price">
-      <h6 class="heading-3 img_box__price">
-        $500k/mon
-      </h6>
-      <button class="img_box__btn ">
-        view details
-      </button>
-    </div>
-   <div class="img_box__mainheading">
-      <h5 class="heading-5">
-      huge office space
+      </li>
+			<li class="splide__slide">
+ <div class="splide__slide--img-container">
+          <img src="./images/property-6.jpg" alt="house photo">
+          <span class="splide__slide--type">
+            for rent
+          </span>
+          <span class="splide__slide--location"><i class="bi bi-geo-alt-fill"></i> lagos, nigeria</span>
+        </div>
+<div class="splide__slide--price">
+  <h5 class="splide__slide--heading-5 heading-5">$4,000,000/year</h5>
+ <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+</div>
+<h4 class="splide__slide--heading-5 fw-bold">
+ office building
+</h4>
+<p class="splide__slide--text">
+  3 storey newly renovated multipurpose office building with parking.
+</p>
+<div class="splide__slide--facilities">
+  <aside>
+      97 <i class="bi bi-usb-mini-fill"></i>
+<p>offices</p>
+  </aside>
+  <aside>
+       23 <i class="bi bi-basket3-fill"></i>
+<p>boardrooms</p>
+  </aside>
+  <aside>
+ 3,2k <i class="bi bi-arrows-fullscreen"></i>
+ <p>sqaure ft</p>
+  </aside>
+</div>
+<div class="splide__slide--realtor">
+  <div class="splide__slide--realtor-details">
+    <img src="./images/realtor-2.jpeg" alt="realtor photo" class="splide__slide--realtor-img">
+   <div> <h5 class="splide__slide--heading">
+      sasha vince
     </h5>
-    <span class="img_box__subheading">
-      Capetown South Africa
-    </span>
-   </div>
-   <div class="img_box__details">
-   <article class="img_box__details--div">
-       <aside class="img_box__info">
-<i class="bi bi-arrows-fullscreen"></i> 3,2k sqft
-     </aside>
-      <aside class="img_box__info">
-   <i class="bi bi-book-half"></i>
-library
-     </aside>
-   </article>
-     <article class="img_box__details--div">
-       <aside class="img_box__info">
-      <i class="bi bi-building"></i>
-97 offices
-     </aside>
-      <aside class="img_box__info">
-  <i class="bi bi-aspect-ratio"></i>
-23 halls
-     </aside>
-   </article>
-   </div>
-   </div>
-   <button class="img_box__realtor--contact">
-    <span class="img_box__realtor--grid">
-     contact realtor
-    </span>
-     <div>
-       <a href="#"><i class="bi bi-envelope-fill"></i></a>
-    <a href="#"><i class="bi bi-telephone-forward-fill"></i></a>
+    <p>realtor</p></div>
   </div>
-   </button>
-  <!-- </div> -->
+  <div class="splide__slide--contact-info">
+     <a href="#"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#"><i class="bi bi-telephone-fill"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
   </div>
 </div>
+      </li>
+		</ul>
   </div>
-  <div class="swiper-button-next swiper-btn"></div>
-  <div class="swiper-button-prev swiper-btn"></div>
-  <br><br><br><br>
-   <div class="swiper-pagination"></div>
-</div>
 </div>
       </section>
       <!-- END OF FEATURED LISTING SECTION AND BEGINING OF FORM AND REALTORS SECTION -->
@@ -848,39 +774,28 @@ library
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-   <!-- Swiper js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- SWIPER JS INITIALIZE -->
-    <script type="text/javascript">
-       var swiper = new Swiper(".card_slider", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-       navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-          breakpoints: {
-          320: {
-            slidesPerView: 1,
-          },
-          700: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          1000: {
-            slidesPerView: 3,
-            spaceBetween: 20,   
-          },
-           1400: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-        },
-      });
-    </script>
+ <!-- SPLIDE JS -->
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+ <script>
+  var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+     gap: 50,
+  breakpoints:{
+    640:{
+      perPage: 1
+    },
+    1000:{
+      perPage: 2
+    },
+    1100:{
+      perPage: 3
+    },
+  }
+} );
+
+splide.mount();
+ </script>
   </body>
 </html>

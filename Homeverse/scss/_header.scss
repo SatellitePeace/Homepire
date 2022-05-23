@@ -2,21 +2,39 @@
   background: $bg-colour;
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 15rem;
   place-items: center;
   padding: 7rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
 
   &__smalltext {
     font-size: $font-size-meduim;
     color: $color-primary;
+    @media screen and (max-width: $bp-meduim) {
+      font-size: $font-size-meduim;
+    }
+    // @media screen and (max-width: $bp-large) {
+    //   font-size: $font-size-meduim;
+    // }
   }
   &__heading {
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: bolder;
     color: $color-primary-dark;
+    @media screen and (max-width: $bp-large) {
+      font-size: $font-size-larger;
+    }
+    @media screen and (max-width: $bp-meduim) {
+      font-size: $font-size-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-larger;
+    }
   }
   &__subheading {
     font-size: $font-size-large;
@@ -25,10 +43,19 @@
     line-height: 3.5rem;
     margin: 2rem 0 4rem 0;
   }
+  @media screen and (max-width: $bp-large) {
+    font-size: $font-size-large;
+  }
+  @media screen and (max-width: $bp-small) {
+    font-size: $font-size-large;
+  }
   &__btn {
     border: 2px solid $color-secondary;
     font-size: $font-size-meduim;
     margin-bottom: 3rem;
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-meduim;
+    }
   }
   &__img {
     width: 100%;

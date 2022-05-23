@@ -1,13 +1,18 @@
+@mixin grid {
+  display: flex;
+  justify-content: space-between;
+}
 .blog {
   grid-column: full-start / full-end;
 
   &__div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     column-gap: 5rem;
   }
   &__card {
-    background: $bg-colour;
+    background: $misty-rose;
+    box-shadow: $shadow-2;
 
     margin: 3rem 0;
     font-family: $font-display;
@@ -19,15 +24,13 @@
     width: 100%;
   }
   &__details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid;
     margin-top: 2rem;
     font-size: $font-size-meduim;
   }
 
   &__footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid;
     font-size: $font-size-small;
     border-top: 1px solid $color-primary-dark;
     margin-top: 3rem;
